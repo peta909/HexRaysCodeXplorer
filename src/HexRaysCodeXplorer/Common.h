@@ -78,6 +78,9 @@
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+//Added to overcome compiler error in VS 2017 for IDA 7.2
+#define WOPN_ONTOP              0x08 
+#define WOPN_MENU              0x10
 
 template<typename T>
 struct print1_accepts_qstring
